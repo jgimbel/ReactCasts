@@ -12,11 +12,15 @@
     // Define our render method.  The render method is the only required method
     // in a React component.
     
-    render: () => {
+    render: () => { //THIS GIVES PROBLEMS
       // Return a snippet of JSX consisting of a button and a span.
       // The button is assigned a class name and a type.  Inside of the button
       // we place both a title and a number.  The number is wrapped inside of a span
       // with class badge.
+      
+      
+      console.log(this);//have fun!
+      
       
       return <button className="btn btn-primary" type="button">
         {this.props.title} <span className="badge">{this.props.number}</span>
