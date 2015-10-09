@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactRouter = require('react-router');
-var HashHistory = require('react-router/lib/history');
+var createBrowserHistory = require('history/lib/createBrowserHistory');
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var ClientID = '9e1c90dc74654dc';
@@ -26,7 +26,7 @@ var Child2 = React.createClass({
 })
 
 var routes = (
-  <Router>
+  <Router history={createBrowserHistory}>
     <Route path="/" component={Hello}>
       <Route path="1" component={Child1} />
       <Route path="2" component={Child2} />
