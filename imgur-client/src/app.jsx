@@ -26,7 +26,7 @@ var Child2 = React.createClass({
 })
 
 var routes = (
-  <Router history={createBrowserHistory}>
+  <Router history={createBrowserHistory()}>
     <Route path="/" component={Hello}>
       <Route path="1" component={Child1} />
       <Route path="2" component={Child2} />
